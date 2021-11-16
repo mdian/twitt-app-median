@@ -1,0 +1,334 @@
+/* @import url(../fonts/AdobeArabic-Bold.otf); */
+@font-face {
+  font-family: "CustomFont";
+  src: url(../fonts/DroidNaskh-Regular.ttf);
+}
+@font-face {
+  font-family: "Notoserf";
+  src: url(../fonts/NotoSerif-Black.ttf);
+}
+
+/* ============global==================== */
+* {
+  text-transform: capitalize;
+}
+/* ============End global================ */
+
+/* introduction */
+.text-info {
+  font-size: 2rem !important;
+}
+
+.left_img {
+  min-height: 95vh;
+  background: url(/img/left_img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 558px) {
+  .left_img {
+    min-height: 22vh;
+  }
+  .left_img i {
+    font-size: 13rem !important;
+  }
+  .footer_bottom {
+    position: relative;
+    top: 5px;
+  }
+}
+.left_img i {
+  font-size: 15rem;
+}
+.sign_icon {
+  width: 20px;
+  height: 20px;
+}
+.google_icon {
+  margin-right: 0.2rem;
+}
+
+.apple_icon {
+  width: 27px;
+  height: 27px;
+}
+.sign_up_buttons button {
+  margin: 0.2rem 0;
+  border-radius: 2rem;
+  width: 18.6rem;
+  padding: 0.4rem 1.3rem;
+  border: 1px #ddd solid;
+}
+.sign_up_buttons button:hover {
+  background-color: #eee;
+}
+.terms {
+  font-size: 0.8rem;
+  padding-right: 9rem !important;
+}
+
+/* footer */
+footer a span {
+  display: inline-block;
+  color: #333 !important;
+  font-size: 0.8rem;
+  padding: 0.9rem 0.5rem;
+}
+.footer_bottom {
+  margin-top: -0.5rem;
+  display: inline-block;
+}
+.footer_bottom span {
+  padding: 0 0.4rem;
+}
+/* =============================================================== 
+main page style
+==================================================================*/
+
+/* left-side */
+.left-side {
+  border: 1px solid red;
+}
+.left_side {
+  position: fixed;
+  width: 17%;
+  left: 5rem;
+}
+.left_side a {
+  color: #333 !important;
+}
+.left_side ul li .fas,
+.left_side ul li .far {
+  font-size: 1.5rem;
+  padding: 0.3rem 1rem 0.3rem 0;
+}
+.left_side ul li span {
+  font-size: 1.2rem;
+}
+.tweet_btn {
+  background-color: #1d9bf0;
+  padding: 0.8rem 6rem;
+  border-radius: 3rem;
+  color: white;
+  border: 0;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.profile_img {
+  width: 50px;
+  height: 50px;
+}
+
+.down_box {
+  margin-left: -1rem;
+}
+
+.profile_detials {
+  font-size: 0.9rem;
+}
+
+/* aside small side */
+.aside_bar_small {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+.aside_bar_small i {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: #333;
+}
+
+/* middle col style */
+
+.middle_col {
+  border: 0.1rem solid #eee;
+}
+
+.intro,
+.twitt_box {
+  border-bottom: 1px solid #eee;
+  padding: 0.8rem 0;
+}
+.intro_home,
+.twitt_box_details {
+  padding: 0 0.7rem;
+}
+.twitt_img {
+  width: 50px;
+  height: 50px;
+}
+.twitt_box_text {
+}
+.twitt_box_text textarea:focus {
+  border: 0;
+  outline: 0;
+}
+.twitt_control {
+  font-weight: 600;
+}
+.box_control {
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+.textarea::placeholder {
+  color: #333;
+}
+
+.twitt_icons_action svg {
+  width: 3rem;
+  color: #1d9bf0 !important;
+  height: 3rem;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+.t-icon {
+}
+
+.t-icon {
+  margin: 0 2px;
+  color: #1d9bf0 !important;
+}
+
+.twitt-btn {
+  padding: 0 1.4rem !important;
+  background-color: #1d9bf0;
+  color: #eee;
+  opacity: 0.5;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+/* twitt */
+.twitt {
+  border: 1px solid #eee;
+}
+.profile_img_twitt {
+  padding: 1rem;
+}
+.box_twitt img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.twitt_detials h5 {
+  font-size: 1rem !important;
+}
+
+.twitt_detials h5 span {
+  color: rgb(119, 116, 116);
+}
+.action-btn {
+  cursor: pointer;
+}
+.action-btn:hover {
+  background-color: #eee;
+  border-radius: 50%;
+  height: 2rem;
+}
+
+.twitt_btn_actions svg {
+  width: 27px;
+  height: 27px;
+  padding: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+.twitt_btn_actions svg:hover {
+  background-color: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* right col */
+
+.main {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+  border-radius: 30px;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.twitt_search {
+  background-color: rgb(243, 243, 243) !important;
+  padding: 1.1rem;
+}
+
+.right_col {
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  width: 40%;
+}
+
+/* trends */
+
+.treands,
+.who_to_follow {
+  background-color: rgb(243, 243, 243);
+  padding: 0.3rem 0.1rem !important;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.treands h5 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.trends_place {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+.who_to_item {
+  width: 100%;
+}
+.who_to_item:hover {
+  background-color: rgb(202, 201, 201);
+}
+.who_to_item_title p {
+  margin: 0 0 0 2px;
+  font-weight: bold;
+}
+.who_to_item_title p:last-child {
+  font-size: 0.7rem;
+  color: rgb(129, 128, 128);
+}
+.who_to_item .follow_btn {
+  background-color: black !important;
+  color: #eee;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.trends_count {
+  font-size: 0.7rem;
+  color: rgb(170, 167, 167);
+}
+
+.who_to_item_img img {
+  width: 30px;
+  height: 30px;
+}
