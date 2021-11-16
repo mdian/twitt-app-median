@@ -137,7 +137,14 @@
           // The signed-in user info.
           const user = result.user;
           // ...
-          console.log("user:", result.user)
+          console.log("user:", JSON.stringify(user));
+          try {
+            localStorage.clear();
+            localStorage.setItem('result', JSON.stringify(user));
+            window.location.replace("http://localhost:5502/main.html");
+          } catch {
+            console.log(error)
+          }
         })
         .catch((error) => {
           // Handle Errors here.
