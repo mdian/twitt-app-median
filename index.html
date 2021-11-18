@@ -19,9 +19,9 @@
 <body>
   <!-- introduction -->
   <section class="join_twitter">
-    <div class="container-fluid pl-0 pr-0 pr-md-2">
-      <div class="row align-items-stretch">
-        <div class="col-12 col-md-7 order-1 order-md-0">
+    <div class="container-fluid pl-0 pr-0">
+      <div class="row align-items-stretch mx-0">
+        <div class="col-12 col-md-7 px-0 order-1 order-md-0">
           <div class="left_img">
             <!-- <img src="/img/left_img.png" class="w-100 left_img" alt="twitter" title="twitter" /> -->
             <i class="fab fa-twitter  pt-5 text-white"></i>
@@ -141,7 +141,11 @@
           try {
             localStorage.clear();
             localStorage.setItem('result', JSON.stringify(user));
+            // active this if u want to run on localhost
             window.location.replace("http://localhost:5502/main.html");
+
+            // window.location.replace("https://twitt-app-median-new.netlify.app/main.html");
+
           } catch {
             console.log(error)
           }
